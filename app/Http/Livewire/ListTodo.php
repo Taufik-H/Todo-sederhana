@@ -3,10 +3,12 @@
 namespace App\Http\Livewire;
 
 use App\Models\Todo;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class ListTodo extends Component
-{   
+{   use WithPagination;
     
     public $TodoId;
     public $TodoIdForm;
@@ -26,7 +28,7 @@ class ListTodo extends Component
     public function render()
     {
         return view('livewire.list-todo',[
-            'todo' =>Todo::orderBy('id','ASC')->paginate(4)
+            'todo' =>Todo::where('user_id','=',Auth::user()->id)->orderBy('completed_at','ASC')->orderBy('id','ASC')->paginate(4)
         ]);
     } 
     

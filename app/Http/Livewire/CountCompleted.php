@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Todo;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class CountCompleted extends Component
@@ -18,7 +19,7 @@ class CountCompleted extends Component
     public function render()
     {
         return view('livewire.count-completed',[
-            'completed'=>Todo::where('completed_at', '!=',null)
+            'completed'=>Todo::where('completed_at', '!=',null )
         ]);
     }
 }
