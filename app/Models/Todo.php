@@ -20,7 +20,7 @@ class Todo extends Model
         return $this->completed_at !== null;
     }
     public function isUser(){
-        return $this->user_id === Auth::user()->id;
+        return $this->user_id == Auth::user()->id;
     }
     
     public function user(){

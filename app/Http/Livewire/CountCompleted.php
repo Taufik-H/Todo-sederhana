@@ -19,7 +19,7 @@ class CountCompleted extends Component
     public function render()
     {
         return view('livewire.count-completed',[
-            'completed'=>Todo::where('completed_at', '!=',null )
+            'completed'=>Todo::where('completed_at', '!=',null )->where('user_id','=',Auth::user()->id)
         ]);
     }
 }
