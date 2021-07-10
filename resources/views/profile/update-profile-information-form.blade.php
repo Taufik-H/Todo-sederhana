@@ -1,13 +1,10 @@
 <x-jet-form-section submit="updateProfileInformation">
     <x-slot name="title">
-
+        {{ _('Profile') }}
     </x-slot>
 
     <x-slot name="description">
-        <div
-            class="shadow-md bg-white text-blue-700 pb-80 transform transition duration-700 ease-in-out hidden sm:w-14 sm:hidden md:block md:w-52 lg:w-52 rounded-md fixed">
-            <livewire:sidebar class="p-0"></livewire:sidebar>
-        </div>
+
     </x-slot>
 
     <x-slot name="form">

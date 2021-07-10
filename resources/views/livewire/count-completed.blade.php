@@ -1,6 +1,6 @@
 <div>
-    <div class="absolute font-extrabold text-lg text-gray-400 md:border-none md:left-20 md:-top-2 sm:-left-0">
-
+    <div class="font-semibold text-indigo-600 w-10 rounded-full text-center  bg-indigo-200">
         {{ $completed->count() }}
+
     </div>
 </div>

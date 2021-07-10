@@ -1,33 +1,45 @@
 <div>
-    <div class="md:flex gap-4 justify-center hidden sm:flex">
-        <div class="bg-white shadow-md p-12 rounded-md w-full">
-            <div class="text-sm text-gray-400 font-bold absolute">
-
-                <livewire:todo-count></livewire:todo-count>
-                <div
-                    class="p-2 absolute ml-1 bg-green-100 text-green-400 md:border-none md:-top-3 md:left-40 md:rounded-lg sm:left-9 sm:-top-16 sm:border-2 sm:border-green-400 sm:rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                    </svg>
+    <section class="text-gray-600 body-font mx-auto">
+        <div class="container flex flex-wrap justify-center ">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/2 md:w-full">
+                    <div
+                        class="flex border-2 bg-white rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                        <div
+                            class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-white border-2 border-indigo-100 text-indigo-500 flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">MyTodo</h2>
+                            <p class="leading-relaxed text-base">
+                                <livewire:todo-count></livewire:todo-count>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <span class="absolute -ml-10 -mt-11">myTodo</span>
+                <div class="p-4 lg:w-1/2 md:w-full">
+                    <div
+                        class="flex border-2 rounded-lg bg-white border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                        <div
+                            class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full border-2 border-indigo-100 bg-white text-indigo-500 flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Completed</h2>
+                            <p class="leading-relaxed text-base">
+                                <livewire:count-completed></livewire:count-completed>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="bg-white shadow-md p-12 w-full rounded-md">
-            <div class="text-sm text-gray-400 font-bold absolute">
-                <livewire:count-completed></livewire:count-completed>
-                <div
-                    class="p-2 absolute ml-1 bg-red-100 text-red-400 md:border-none md:-top-3 md:left-40 md:rounded-lg sm:left-9 sm:-top-16 sm:border-2 sm:border-red-400 sm:rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                    </svg>
-                </div>
-                <span class="absolute -ml-10 -mt-11">Completed</span>
-            </div>
-        </div>
-    </div>
+    </section>
 </div>

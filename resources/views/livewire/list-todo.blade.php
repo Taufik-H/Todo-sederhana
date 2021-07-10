@@ -1,5 +1,4 @@
 <div>
-
     @foreach ($todo as $t)
 
         @if ($t->isUser())
@@ -7,8 +6,7 @@
 
             @if ($t->isCompleted())
 
-                <div
-                    class="bg-gray-50 p-2 border-2  border-green-300 w-full mt-4 rounded-md  shadow-md mx-auto hidden md:block sm:block">
+                <div class="bg-gray-50 p-2 border-2  border-green-300 w-full mt-2 rounded-md  shadow-md mx-auto">
                     <div class="flex justify-between items-center">
 
                         <div class="text-red-500  flex items-center "><svg xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +17,7 @@
                             </svg>
                             <div class=" text-sm text-gray-400 font-bold p-2 line-through ">{{ $t->title }}</div>
                         </div>
-                        {{-- form todoadd --}}
+
                         <div class="   flex"><span
                                 class="flex text-green-600 bg-green-200 rounded-full font-semibold w-6 h-6  items-center "><svg
                                     xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-auto" viewBox="0 0 20 20"
@@ -62,7 +60,6 @@
                             @endif
                             <div class="flex">
 
-                                {{-- form todoadd --}}
                                 <button wire:click="TodoUpdateForm({{ $t->id }})"
                                     class=" p-2 hover:bg-indigo-300 text-indigo-500 focus:outline-none focus:ring-2 focus:indigo-green-200 focus:ring-opacity-50 font-semibold rounded-md bg-indigo-200 flex mr-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
