@@ -2,7 +2,7 @@
     <section class="text-gray-600 body-font mx-auto">
         <div class="container flex flex-wrap justify-center ">
             <div class="flex flex-wrap -m-4">
-                <div class="p-4 lg:w-1/2 md:w-full">
+                <div class="p-4 w-1/2 lg:w-1/2 md:w-full ">
                     <div
                         class="flex border-2 bg-white rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
                         <div
@@ -20,7 +20,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-4 lg:w-1/2 md:w-full">
+                <div class="p-4 w-1/2 lg:w-1/2 md:w-full">
                     <div
                         class="flex border-2 rounded-lg bg-white border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
                         <div

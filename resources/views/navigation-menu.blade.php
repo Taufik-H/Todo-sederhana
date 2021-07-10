@@ -6,16 +6,12 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-jet-application-mark class="block h-9 w-auto" />
+                        <img src="{{ asset('/image/favicon.png') }} " class="w-24 h-24">
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Back to Dashboard') }}
-                    </x-jet-nav-link>
-                </div>
+
 
             </div>
 
@@ -161,7 +157,7 @@
                 <div class="flex flex-col items-center flex-shrink-0 pb-4 bg-blueGray-50">
                     @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
                         <div class="flex-shrink-0 mr-3">
-                            <img class="h-20 w-20 rounded-full object-cover"
+                            <img class="h-20 w-20 rounded-full object-cover border-2 border-blue-600 ring-1 ring-indigo-300"
                                 src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
                         </div>
                     @endif

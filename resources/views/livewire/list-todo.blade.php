@@ -43,7 +43,7 @@
                         </div>
                     </div>
                 @elseif (!$t->isCompleted())
-                    <div class="bg-white p-2 w-full mt-4 rounded-md shadow-md mx-auto hidden md:block sm:block">
+                    <div class="bg-white p-2 w-full mt-4 rounded-md shadow-md mx-auto ">
                         <div class="flex justify-between items-center">
 
                             @if ($TodoIdForm === $t->id)
