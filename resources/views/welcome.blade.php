@@ -23,7 +23,7 @@
                 class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                 <h1 class="title-font sm:text-4xl text-3xl mb-4  text-gray-700"><span
                         class="text-green-500 font-semibold">DU</span><span class="font-semibold">DU</span>
-                    <br class="hidden lg:inline-block">buatlah harimu menyenangkan
+                    <br class="hidden lg:inline-block">buatlah harimu menyenangkan🎉
                 </h1>
                 <p class="mb-8 leading-relaxed">dudu adalah sebuah web todolist yang dibuat menggunakan laravel
                     Jetstream + livewire, ini cocok sekali buat kalian yang ingin belajar laravel livewire karna web ini
