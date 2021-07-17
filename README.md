@@ -1,6 +1,6 @@
 <p align="center"  display="flex"><a href="#" target="_blank">
-    <img src="https://raw.githubusercontent.com/Taufik-H/Todo-sederhana/master/duduv1.png" width="700">
-     <img src="https://raw.githubusercontent.com/Taufik-H/Todo-sederhana/master/duduv2.png" width="173">
+    <img src="https://raw.githubusercontent.com/Taufik-H/Todo-sederhana/master/duduv1.png" width="500">
+     <img src="https://raw.githubusercontent.com/Taufik-H/Todo-sederhana/master/duduv2.png" width="125">
     </a></p>
 
 
